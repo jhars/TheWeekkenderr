@@ -1,0 +1,38 @@
+== README
+
+Bootstrap Process:
+
+1. 	#GemFile: Add+
+	gem 'bootstrap-sass', '~> 3.2.0'
+	gem 'autoprefixer-rails'
+
+2. Application.css (+ .sass to ending)
+
+3. 	Add to: app/asssts/stylesheets/application.css.sass
+
+	@import "bootstrap-sprockets"
+	@import "bootstrap"
+
+========================================
+
+Terminal Commands = TC
+1. rails new postgresql -d weekender (TC)
+
+2. rake db:create (TC)
+
+3. root 'pages#index' in routes.rb
+
+4. rails g controller pages index (TC)
+
+5.
+
+6.
+
+7.
+
+8.
+
+9.
+
+10.
+
