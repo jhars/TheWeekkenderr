@@ -10,8 +10,8 @@
 10.times do
      User.create(
         email: FFaker::Internet.email,
-        password: FFaker::Internen.password,
+        password_digest: FFaker::Internen.password,
         f_name: FFaker::Name.first_name,
         l_name: FFaker::Name.last_name
       ) 
-end 
+end

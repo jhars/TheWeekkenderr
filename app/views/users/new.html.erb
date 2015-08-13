@@ -1,0 +1,13 @@
+<div class="col-sm-8 col-sm-offset-2">
+
+<h1> Sign up! </h1>
+
+<%= form_for :user do |f| %>
+  First name: <%= f.text_field :f_name %><br />
+  Last name : <%= f.text_field :l_name %><br />
+  Email : <%= f.text_field :email %><br />
+  Password    : <%= f.text_field :password_digest %><br />
+  <%= f.submit %>
+<% end %>
+
+</div>
