@@ -199,7 +199,18 @@ PICK-UP POINT.
 
 3. userController >>>> # before_filter :authorize, except: [:index, :show] (commented out)
 
-4. Flash Message on Success Works
+4. Flash Message on Success & 'Email has already been taken' Works
+
+5. pushed to GitHub
+
+
+GET RID OF TURBO LINKS!!!!!!!!!!!
+
+GemFile
+Application.html (both head link/scripts)
+Application.js
+
+
 
 
 
