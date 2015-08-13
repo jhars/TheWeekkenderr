@@ -184,7 +184,28 @@ PICK-UP POINT.
 2. In Postgresql:
 	\c weekender_test
 
-3. form_for user (new-create) works!
+3. form_for user (new-create) works!!!!!!!!!!!!!!!!
+
+------------------------------------------------------------------
+
+(HERE WE ARE...) =====>>>> getting Flash Messages to Work...>>>
+
+1. application.html >>> # <%= flash_messages %> (commented out)
+
+2. repleaced with >>> 
+	<% flash.each do |name, msg| %>
+    	<%= content_tag :div, msg, class: "alert #{name == 'error' ? 'alert-danger' : 'alert-notice'}" %>
+  	<% end %>
+
+3. userController >>>> # before_filter :authorize, except: [:index, :show] (commented out)
+
+4. Flash Message on Success Works
+
+
+
+
+
+
 
 
 

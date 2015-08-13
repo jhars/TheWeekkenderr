@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
 
+	# before_filter :authorize, except: [:index, :show]
+
 	def index
 	end
 
@@ -7,12 +9,15 @@ class UsersController < ApplicationController
 	  @user = User.new
 	  render :new
 	end
+	#line 14 test
 
 	def create
 	  user = User.new(user_params)
 	  if user.save
+	  	flash[:notice] = "Successfully created new User!"
 	  	redirect_to '/'
 	  else
+	  	flash[:error] = user.errors.full_messages.join(", ")
 	  	redirect_to '/signup'
 	  end
 	end
