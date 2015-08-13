@@ -13,5 +13,5 @@
         password_digest: FFaker::Internen.password,
         f_name: FFaker::Name.first_name,
         l_name: FFaker::Name.last_name
-      ) 
+      )
 end

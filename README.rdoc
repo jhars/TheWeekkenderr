@@ -177,16 +177,30 @@ PICK-UP POINT.
 	  https://github.com/sf-wdi-19-20/modules/blob/master/w7_d4_2_testing/challenge_solutions.md
 ---------->> TESTING SUCKS...
 
-Views & Partials:
+***Views & Partials & DB***
 
 1. All Routes/Views working (so far...)
 
-2.
+2. In Postgresql:
+	\c weekender_test
+
+3. form_for user (new-create) works!
+
+
+
+
+
+
+
+
+
+
+
 
 -------
 Action Items:
 
-1. New User (form > sql)
+1. New User (form > sql) > BS form format
 2. SignUp/Login
 3. New Post
 4. Show Posts
